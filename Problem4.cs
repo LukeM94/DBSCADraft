@@ -21,8 +21,7 @@ namespace DBSCADraft
             // Declaring & initialising a String variable, input.
             string input = "";
 
-
-            // Creating a for loop, that asks the user to enter a movie name. Loops 
+            // Creating a for loop, that asks the user to enter a movie name. The loop continues for the length specified by the user. The users input is assigned to a variable, input, and added to the current position in the array. If the input equals "Exit", the loop breaks.
             for (int i = 0; i < numItems; i++)
             {
                 Console.WriteLine("Enter Movie Name: ");
@@ -35,6 +34,7 @@ namespace DBSCADraft
                 }
             }
 
+            // Creating another for loop, that continues for the length of the movieArray, and outputs the movies to the console. If the current position in the movieArray is empty (null), or is "Exit", it's not displayed on the screen.
             for (int x = 0; x < movieArray.Length; x++)
             {
                 if (movieArray[x] != null && movieArray[x] != "Exit")
