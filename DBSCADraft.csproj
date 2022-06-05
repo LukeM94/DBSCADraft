@@ -6,14 +6,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Problem1.cs" />
     <Compile Remove="Problem2.cs" />
-    <Compile Remove="Problem3.cs" />
     <Compile Remove="Problem4.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Problem1.cs" />
     <None Include="Problem2.cs" />
-    <None Include="Problem3.cs" />
     <None Include="Problem4.cs" />
   </ItemGroup>
 

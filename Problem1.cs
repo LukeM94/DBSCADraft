@@ -54,7 +54,7 @@ namespace DBSCADraft
             }
             else if (hoursWorked > 37.5)
             {
-                //If the number of hours worked is greater than 37.5, then ask the user to input their overtime details. No point user entering this info if they haven't worked overtime.
+                //If the number of hours worked is greater than 37.5, then ask the user to input their overtime details. If the user hasn't worked any overtime then we don't ask them to enter that info.
                 Console.WriteLine("Please enter your overtime rate: ");
                 overtimeRate = Double.Parse(Console.ReadLine());
                 Console.WriteLine("Please enter your overtime tax rate: ");
